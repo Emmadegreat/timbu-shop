@@ -83,7 +83,7 @@ const Header = () => {
                             <path d="M25 10C27.7614 10 30 7.76142 30 5C30 2.23858 27.7614 0 25 0C22.2386 0 20 2.23858 20 5C20 7.76142 22.2386 10 25 10Z" fill="#EBADAD"/>
                             <path d="M24.2226 3.8V3.385H25.1626V7H24.7026V3.8H24.2226Z" fill="black"/>
                         </svg>
-                        <span className='absolute bottom-[28px] right-[22px] px-[0.22rem] py-[0rem] text-[0.8rem] rounded-[100%] text-[#fff] bg-[#ff3333]'></span>
+                        <span className='absolute bottom-[28px] right-[22px] px-[0.22rem] py-[0rem] text-[0.8rem] rounded-[100%] text-[#fff] bg-[#ff3333]'>0</span>
                     </div>
                 </a>
 
