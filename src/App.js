@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from './pages/home';
+import Singleproduct from "./pages/singleproduct";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             {/* <Route path="/cart" element={<Cart/>} /> */}
             {/*<Route path="/products" element={<Products/>} />*/}
             {/* <Route path="/checkout" element={<Checkout/>} /> */}
-            {/*<Route path="/products/:id" element={<ProductDetail />} />*/}
+            <Route path="/products/:id" element={<Singleproduct />} />
           </Routes>
         </section>
         <Footer/>

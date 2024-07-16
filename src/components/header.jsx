@@ -4,8 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Menu from './menu'
 import { TfiMenu } from "react-icons/tfi";
 import logo2 from '../assest/images/logo2.png'
-
-//import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const Links = () => {
     return <a href="/" className='hidden'>link</a>
@@ -13,7 +12,9 @@ const Links = () => {
 
 
 const Header = () => {
-   //const totalItems = useSelector((state) => state.cart.totalItems);
+
+    const cart = useSelector((state) => state.cart.products);
+    console.log(cart);
     const [show, setShow] = useState(false);
 
     const Showbtn = () => setShow(true);
@@ -49,7 +50,7 @@ const Header = () => {
                             <path d="M31.2784 5.6V4.77H33.1584V12H32.2384V5.6H31.2784Z" fill="black"/>
                         </svg>
                             <span className='absolute bottom-[12px] right-[22px] px-[0.22rem] py-[0rem] text-[0.8rem] rounded-[100%] text-[#fff] bg-[#ff3333]'>
-                            0
+                            {cart.length}
                             </span>
                     </div>
                 </a>

@@ -7,11 +7,12 @@ import { useDispatch } from 'react-redux';
 
 
 
-const ProductCard = ({ imgUrl, name, price }) => {
-    // const dispatch = useDispatch()
-    // const handleAddToCart = (product) => {
-    //     dispatch(addToCart(product));
-    // }
+const ProductCard = ({ imgUrl, name, price,link }) => {
+
+    const dispatch = useDispatch()
+    const handleAddToCart = () => {
+        dispatch(addToCart({prodctId:1,quantity:1}));
+    }
 
     return (
         <div className='px-2 py-4'>
@@ -28,9 +29,10 @@ const ProductCard = ({ imgUrl, name, price }) => {
                 <div className='flex flex-col items-center mt-[-0.7rem] px-2'>
                     <p className='text-[16px] tex-center'>{name}</p>
                     <p>₦{price}</p>
+                    <span>{link}</span>
 
                     <button
-                        // onClick={handleAddToCart}
+                        onClick={handleAddToCart}
                         className='group hover:text-[#fff] bg-[#EBADAD] rounded px-6 mb-4 mt-1 items-center py-2 flex gap-4 hover:bg-[#AF0101]'>
                         <span className='group-hover:text-[#fff]'>
                             <svg

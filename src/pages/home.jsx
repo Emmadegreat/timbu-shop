@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import Hero from '../components/hero'
+import { Link } from 'react-router-dom';
 import Popularproducts from '../components/popularproducts';
 import ProductCard from '../components/productcard';
 import axios from 'axios';
@@ -88,9 +89,12 @@ const Home = () => {
 
                             <ProductCard
                                 key={product.id}
+
                                 imgUrl={`https://api.timbu.cloud/images/${product.photos[0].url}`}
+
                                 name={product.name}
                                 price={product?.current_price[0]?.["NGN"]?.[0]}
+                                link={<a href={`/products/${product.id}`} id='view'> view</a>}
 
                             />
                         </>
