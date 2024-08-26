@@ -1,3 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.search-input{
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px
+}
+
+.submit-btn{
+  border-width: 0rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px
+}
+
+.get-started path {
+  transition: stroke 0.3s ease;
+}
+
+.get-started:hover path {
+  stroke: #ad5b5b;
+}
+
+
+
+.links {
+  position: relative;
+}
+
+.links::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #FFDBA6;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.links:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.cartmodal{
+  position: relative;
+  max-width: 650px;
+  bottom: 8%;
+  margin: auto;
+  width: 100%;
+  padding: 2rem 0rem;
+  padding-right: 2rem;
+
+}
+
+.modal-card2{
+  margin-left: 3rem;
+}
+
+@media screen and (max-width:920px) {
+  .cartmodal {
+    max-width: 550px;
+    padding-left: 1.4rem;
+
+  }
+  .modal-card2{
+    margin-left: 1.8rem;
+  }
+}
+
+@media screen and (max-width:641px) {
+  .search-input::placeholder {
+    color: #8E5858;
+    font-size: 0.5rem;
+
+  }
+  .modal-card2{
+    margin-left: 0rem;
+  }
+  .cartmodal {
+    max-width: 360px;
+    padding: 3rem 0rem;
+    margin: auto;
+  }
+}
+
+.navbar .nav-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    background-color: #fff;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    margin-left: -0.5rem;
+    padding-left: 2rem;
+    left: -100%;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+  z-index: 1000;
+  transition: 0.7s all;
+  -webkit-transition: 0.7s all;
+  -moz-transition: 0.7s all;
+  -ms-transition: 0.7s all;
+  -o-transition: 0.7s all;
+}
+
+.nav-menu.active{
+    left: 0;
+  }
+.nav-menu .toggler{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
