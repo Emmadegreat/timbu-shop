@@ -68,7 +68,6 @@ const Home = () => {
 
             <Hero />
 
-
             <Popularproducts
                 value={search}
                 onChange={handleSearch}

@@ -50,51 +50,6 @@ const ProductCard = ({ imgUrl, name, price }) => {
                 </div>
             </div>
 
-            {/*showModal && (
-
-                <div
-                    onClick={ToggleModal}
-                    className='fixed bg-opacity-40 inset-0 overflow-auto flex items-center w-full z-[2000] h-[100vh] bg-[#69444442] top-[70px] bottom-[60px] left-0 right-0'>
-
-                    <div className='z-[1500] flex flex-col sm:flex-row justify-center items-center cartmodal
-                        bg-[#fff] shadow-lg' >
-
-                        <div className='flex flex-col bg-[#fff]'>
-                            <p className='sm:block hidden text-[0.7rem]'>Item Secured! You&apos;re One Step Closer to Checkout</p>
-                            <p className='sm:hidden block text-center text-[1.1rem] mb-4'>Item Secured! You&apos;re One Step <br/> Closer to Checkout</p>
-                            <img
-                                src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1720285742/timbu-shop/prod1_f1dxpk.svg"
-                                alt=''
-                                width={100}
-                                height={100}
-                                className='h-[170px] w-[170px] sm:block hidden'
-                            />
-                            <div className='sm:flex hidden flex-col'>
-                                <p className='sm:text-[0.8rem] text-[0.8rem] font-[500]'>Music System Speaker</p>
-                                <p className='ml-8 sm:text-[0.8rem] text-[0.8rem] font-[400]'>QTY: 1</p>
-                                <p className='ml-2 sm:text-[0.8rem] text-[0.8rem] font-[400]'>Total: ₦80,000</p>
-                            </div>
-                        </div>
-
-                        <div className='flex flex-col modal-card2'>
-                            <p className='sm:block hidden text-[0.8rem]'>You have just 1 item in your cart</p>
-                            <p className='sm:block hidden text-center text-sm font-[400]'>₦80,000.00</p>
-                            <address href="/"
-                                className='hover:bg-[#AF0101] hover:text-[#fff] w-[200px] p-2 mt-3 text-sm text-[#000] text-center rounded border-[1px] border-[#AF0101] sm:border-[#B2A9A9]'>
-                                Continue Shopping
-                            </address>
-                            <a href="/cart"
-                                className='hover:bg-[#AF0101] hover:text-[#fff] w-[200px] p-2 sm:my-3 my-5 text-sm text-[#000] text-center rounded border-[1px] border-[#AF0101] sm:border-[#B2A9A9]'>
-                                View Cart
-                            </a>
-                            <a href="/checkout"
-                                className='hover:bg-[#ad5b5b] w-[200px] text-[#fff] text-center rounded bg-[#AF0101] p-2 text-sm'
-                            >Proceed to Checkout</a>
-                        </div>
-                    </div>
-
-                </div>
-            )*/}
 
         </div>
     )
