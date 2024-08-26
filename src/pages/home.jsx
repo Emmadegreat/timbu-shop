@@ -4,7 +4,7 @@ import Hero from '../components/hero';
 import ProductCard from '../components/productcard';
 import axios from 'axios';
 
-//import Popularproducts from '../components/popularproducts';
+import Popularproducts from '../components/popularproducts';
 
 
 
@@ -69,10 +69,10 @@ const Home = () => {
             <Hero />
 
 
-            {/* <Popularproducts
+            <Popularproducts
                 value={search}
                 onChange={handleSearch}
-            /> */}
+            />
             <section className='bg-[#F4F4F480] pt-10 md:px-12 px-7 pb-[5rem]'>
                 {isLoading && (
                     <div className='flex justify-center items-center bg-[#F4F4F480]'>
